@@ -2,7 +2,7 @@
 // YOGA APP - Main JavaScript
 // ===================================
 
-// Session data with YouTube IDs (skip first 10 seconds)
+// Session data with YouTube IDs (skip first 10 seconds for intros)
 const sessions = {
   morning: {
     id: 'ihba9Lw0tv4',
@@ -39,6 +39,31 @@ const sessions = {
     title: 'Unlock Hip Flexors',
     duration: '10 min',
     startTime: 10
+  },
+  // Popular Mady Morrison videos
+  fullbodydaily: {
+    id: 'g_tea8ZNk5A',
+    title: '15 Min Full Body Stretch',
+    duration: '15 min',
+    startTime: 10
+  },
+  morningwakeup: {
+    id: 'X2GxGhOcjQ0',
+    title: '15 Min Morning Stretch',
+    duration: '15 min',
+    startTime: 10
+  },
+  dailymobility: {
+    id: 's-7lyvblFNI',
+    title: 'Daily Mobility Routine',
+    duration: '10 min',
+    startTime: 10
+  },
+  yogaflow: {
+    id: 'kGgYF6N-oGg',
+    title: 'Yoga Flow for Beginners',
+    duration: '10 min',
+    startTime: 10
   }
 };
 
@@ -57,15 +82,15 @@ function openSessionModal(sessionKey) {
 
   // Create YouTube embed iframe
   videoContainer.innerHTML = `
-    <iframe 
-      id="youtube-video"
-      src="https://www.youtube.com/embed/${session.id}?start=${session.startTime}&autoplay=1&rel=0&modestbranding=1"
-      title="${session.title}"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
-  `;
+  < iframe
+id = "youtube-video"
+src = "https://www.youtube.com/embed/${session.id}?start=${session.startTime}&autoplay=1&rel=0&modestbranding=1"
+title = "${session.title}"
+frameborder = "0"
+allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen
+  ></iframe >
+    `;
 
   modal.classList.add('active');
   document.body.style.overflow = 'hidden';
