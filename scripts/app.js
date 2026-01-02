@@ -82,15 +82,15 @@ function openSessionModal(sessionKey) {
 
   // Create YouTube embed iframe
   videoContainer.innerHTML = `
-  < iframe
-id = "youtube-video"
-src = "https://www.youtube.com/embed/${session.id}?start=${session.startTime}&autoplay=1&rel=0&modestbranding=1"
-title = "${session.title}"
-frameborder = "0"
-allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen
-  ></iframe >
-    `;
+    <iframe
+      id="youtube-video"
+      src="https://www.youtube.com/embed/${session.id}?start=${session.startTime}&autoplay=1&rel=0&modestbranding=1"
+      title="${session.title}"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  `;
 
   modal.classList.add('active');
   document.body.style.overflow = 'hidden';
