@@ -21,6 +21,24 @@ const sessions = {
     title: 'Full Body Stretch',
     duration: '25 min',
     startTime: 10
+  },
+  hipmobility: {
+    id: 'jj2AAH6jbHk',
+    title: 'Hip Mobility Routine',
+    duration: '12 min',
+    startTime: 10
+  },
+  hipflexibility: {
+    id: 'lQgy4820wiU',
+    title: 'Beginner Hip Flexibility',
+    duration: '20 min',
+    startTime: 10
+  },
+  hipflexors: {
+    id: 'kI4Jv1C-JK0',
+    title: 'Unlock Hip Flexors',
+    duration: '10 min',
+    startTime: 10
   }
 };
 
